@@ -4,10 +4,9 @@
 # shaderTexture = nil
 
 def setup
-#   pixelDensity(1);
-#   canvas = createCanvas(min(windowWidth, windowHeight),min(windowWidth, windowHeight), WEBGL)
-createCanvas(min(windowWidth, windowHeight),min(windowWidth, windowHeight))
-  # 右クリックのメニューを消す   
+  pixelDensity(1);
+  canvas = createCanvas(min(windowWidth, windowHeight),min(windowWidth, windowHeight), WEBGL)
+# 右クリックのメニューを消す   
 #   canvas.canvas.oncontextMenu = ()=> false;
 #   noCursor();
 
@@ -18,10 +17,8 @@ createCanvas(min(windowWidth, windowHeight),min(windowWidth, windowHeight))
 end
 
 def draw
-  ellipse(mouseX, mouseY, 200, 200)
-  # 1.マウスについてくるオブジェクトを作る
+  background(0)
+  # 1.マウスについてくるオブジェクトを作る Done 
   # 2.右クリック状態で光らないシェーダーのパーティクルがついてくるようにする
   # 3.きれいなシェーダーを書く
 end
-
-# 疑問: WEBGLを指定したときのellipsisの中心座標がなぜズレるのか
